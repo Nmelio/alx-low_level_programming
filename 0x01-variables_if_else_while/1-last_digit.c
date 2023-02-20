@@ -6,9 +6,13 @@
 /**
  * mauin - Entry point
  *
- * Return: Alyays 0 (Success)
+ * Description: Determine if a random number is positive, negative or zero
+ *
+ * Return: 0 (Success)
  */
-int main(void)
+
+int main(void);
+
 {
 	int n;
 
