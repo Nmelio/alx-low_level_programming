@@ -1,18 +1,14 @@
-#include <stdio.h>
+#include <stlib.h>
 #include <time.h>
-#include <stdlib.h>
-/* more headers goes there */
+#include <stdio.h>
 
 /**
- * mauin - Entry point
+ * main - Determine if a random number is positive , negative or zero
  *
- * Description: Determine if a random number is positive, negative or zero
- *
- * Return: 0 (Success)
- */
+ * Return: 0
+*/
 
-int main(void);
-
+int main(void)
 {
 	int n;
 
