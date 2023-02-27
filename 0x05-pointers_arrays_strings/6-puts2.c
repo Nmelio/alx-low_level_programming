@@ -1,22 +1,24 @@
-/**
- * cap_string - capitalizes all words of a string.
- * @s: pointer to input string.
- * Return: Returns pointer to capitalized string.
- */
-char *cap_string(char *s)
-{
-	int i, j;
-	char sep[] = " \t\n,;.!?\"(){}";
+ #include "main.h"
 
-	i = 1;
-	if (s[0] >= 'a' && s[0] <= 'z')
-		s[0] -= ('a' - 'A');
-	while (s[i] != '\0')
+/**
+ * puts2 - Write a function that prints every other character of a string, 
+ *         starting with the first character, followed by a new line.
+ *
+ * @s: This pointer point to a char or string
+ *
+ *
+ */
+
+void puts2(char *s)
+{
+	int a;
+
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		for (j = 0; sep[j] != '\0'; j++)
-			if (s[i - 1] == sep[j] && (s[i] >= 'a' && s[i] <= 'z'))
-				s[i] -= ('a' - 'A');
-		i++;
+		if (a % 2 == 0)
+		{
+			_putchar(s[a]);
+		}
 	}
-	return (s);
+	_putchar('\n');
 }

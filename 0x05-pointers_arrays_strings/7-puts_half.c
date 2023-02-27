@@ -1,20 +1,26 @@
+#include "main.h"
 /**
- * leet - encodes a string into leetspeek.
- * @s: pointer to input string.
- * Return: Returns pointer to leetspeek string.
+ *puts_half - function that prints half of a string, followed by a new line.
+ *
+ *@str: This is the input string
  */
-char *leet(char *s)
+void puts_half(char *str)
 {
-	int i, j;
-	char subs[] = "aAeEoOtTlL";
-	char le[] = "43071";
+	int index, half;
 
-	i = 0;
-	for (i = 0; s[i] != '\0'; i++)
+	index = 0;
+	while (str[index] != '\0')
+		index++;
+
+	half = index / 2;
+
+	if (index % 2 == 1)
+		half++;
+
+	while (half < index)
 	{
-		for (j = 0; subs[j] != '\0'; j++)
-			if (s[i] == subs[j])
-				s[i] = le[j / 2];
+		_putchar(str[half]);
+		half++;
 	}
-	return (s);
+	_putchar('\n');
 }

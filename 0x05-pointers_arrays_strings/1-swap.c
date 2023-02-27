@@ -1,22 +1,17 @@
+#include "main.h"
+
 /**
- * _strncat - concatenates two strings
- * @dest: pointer to the destination string
- * @src: pointer to the source string
- * @n: number of bytes to print
- * Return: pointer to the resulting string dest
+ * swap_int - function that swaps the values of two integers.
+ * @a: this is the first entry
+ * @b: this is the second entry
+ *
+ *
  */
-
-char *_strncat(char *dest, char *src, int n)
+void swap_int(int *a, int *b)
 {
-	int a, b;
+	int changed;
 
-	a = 0;
-	for (b = 0; dest[b] != '\0'; b++);
-
-	while (src[a] != '\0' && a < n)
-	{
-		dest[b + a] = src[a];
-		a++;
-	}
-	return (dest);
+	changed = *a;
+	*a = *b;
+	*b = changed;
 }
