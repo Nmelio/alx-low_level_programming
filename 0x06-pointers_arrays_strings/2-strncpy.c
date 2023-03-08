@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_strncpy - function that copies a string
+ *_strncpy - copies a string
  *
  * @dest: input value
  * @src: input value
@@ -10,7 +10,7 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
+	int j;
 
 	for (j = 0; (j < n && src[j] != '\0'); j++)
 	{
