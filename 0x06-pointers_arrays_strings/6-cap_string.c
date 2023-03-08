@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * string_toupper - changes all lowercase letters of a string to uppercase
+ * cap_string - capitalizes all words of a string
  *
  * @x: pointer to imputed array
  *
  * Return: x
  */
 
-char *string_toupper(char *x)
+char *cap_string(char *x)
 {
 	int i;
 
@@ -16,19 +16,19 @@ char *string_toupper(char *x)
 	{
 		if (x[i] >= 'a' && x[i] <= 'z')
 		{
-			if ((str[index - 1] == ' ' ||
-			     str[index - 1] == '\t' ||
-			     str[index - 1] == '\n' ||
-			     str[index - 1] == ',' ||
-			     str[index - 1] == ';' ||
-			     str[index - 1] == '.' ||
-			     str[index - 1] == '!' ||
-			     str[index - 1] == '?' ||
-			     str[index - 1] == '"' ||
-			     str[index - 1] == '(' ||
-			     str[index - 1] == ')' ||
-			     str[index - 1] == '{' ||
-			     str[index - 1] == '}' ||
+			if ((x[index - 1] == ' ' ||
+			     x[index - 1] == '\t' ||
+			     x[index - 1] == '\n' ||
+			     x[index - 1] == ',' ||
+			     x[index - 1] == ';' ||
+			     x[index - 1] == '.' ||
+			     x[index - 1] == '!' ||
+			     x[index - 1] == '?' ||
+			     x[index - 1] == '"' ||
+			     x[index - 1] == '(' ||
+			     x[index - 1] == ')' ||
+			     x[index - 1] == '{' ||
+			     x[index - 1] == '}' ||
 			     index == 0)
 				{
 					x[i] -= 32;
