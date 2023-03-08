@@ -3,20 +3,21 @@
 /**
  * string_toupper - changes all lowercase letters of a string to uppercase
  *
- * @n: pointer to imputed array
+ * @x: pointer to imputed array
  *
- * Return: n
+ * Return: x
  */
 
-char *string_toupper(char *n)
+char *string_toupper(char *x)
 {
 	int i;
-	for (i = 0; n[i] != '\0'; i++)
+
+	for (i = 0; x[i] != '\0'; i++)
 	{
-		if (n[i] >= 'a' && n[i] <= 'z')
+		if (x[i] >= 'a' && x[i] <= 'z')
 		{
-			n[i] -= 32;
+			x[i] -= 32;
 		}
 	}
-	return (n);
+	return (x);
 }
