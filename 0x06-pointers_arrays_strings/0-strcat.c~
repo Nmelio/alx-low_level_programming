@@ -1,0 +1,49 @@
+#include <stdio.h>
+//#include "main.h"
+/**
+ * A function that concatenates two strings
+ *
+ * Returns: Char
+ */
+
+//char *_strcat(char *dest, char *src)
+int main()
+{
+	int dest[] = {1, 2, 3};
+	int src[] = {5, 6, 7};
+	int i, j, k, l;
+
+
+
+	for(int f = 0; dest[f] != '\0'; f++)
+		printf("%d ", dest[f]);
+	for(int g = 0; src[g] != '\0'; g++)
+		printf("%d ", src[g]);
+
+	//printf("%s", dest[]);
+	//printf("%s", src[]);
+
+	for(i = 0; dest[i] != '\0'; i++)
+	{
+	}
+
+	for(j = 0; src[j] != '\0'; j++)
+	{
+	}
+
+	k = i + j + 1;
+	//dest[] = dest[k];
+
+	for(; i < k; i++)
+	{
+		dest[i] = src[j];
+		i++;
+	}
+
+	for(int f = 0; dest[f] != '\0'; f++)
+		printf("%d ", dest[f]);
+	for(int g = 0; src[g] != '\0'; g++)
+		printf("%d ", src[g]);
+	//dest[k] = '\0';
+	return 0;
+}
