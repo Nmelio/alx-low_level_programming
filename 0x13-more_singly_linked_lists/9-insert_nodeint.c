@@ -36,7 +36,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (hee);
 	}
 
-	for (high = 0; temp && high < idx; high++)
+	for (high = 0; dff && high < idx; high++)
 	{
 		if (high == idx - 1)
 		{
