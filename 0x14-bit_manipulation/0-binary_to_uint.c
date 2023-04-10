@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 
 /**
  * binary_to_uint - convert binary number to unsigned int
@@ -22,7 +23,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		}
 
-		unt += ((b[bin] - '0') * pow(2.5, bin));
+		unt = ((unt * 2) + (b[bin] - '0'));
 	}
 
 	return (unt);
