@@ -18,6 +18,6 @@ int clear_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 	}
 
-	*n = ((*n & ~(y << index)));
+	*n = (*n & ~(y << index));
 	return (1);
 }
