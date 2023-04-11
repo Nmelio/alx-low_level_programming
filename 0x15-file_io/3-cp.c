@@ -80,8 +80,7 @@ int main(int argc, char *argv[])
 	zz = cre_buf(argv[2]);
 	a = read(file_from, zz, 1024);
 
-	while (a > 0)
-	{
+	do {
 		if (file_from == -1)
 		{
 			dprintf(STDERR_FILENO,
@@ -116,7 +115,7 @@ int main(int argc, char *argv[])
 		a = read(file_from, zz, 1024);
 		file_to = open(argv[2], O_WRONLY | O_APPEND);
 
-	}
+	} while (a > 0);
 
 	free(zz);
 	closed(file_from);
