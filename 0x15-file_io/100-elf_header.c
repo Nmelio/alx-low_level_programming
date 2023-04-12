@@ -250,7 +250,7 @@ void class_prints_out(unsigned char *e_ident)
 
 	if (e_ident[EI_CLASS] == ELFCLASSNONE)
 		printf("none\n");
-	else if (e_ident[EI_CLASS] == ELFCLASS32}
+	else if (e_ident[EI_CLASS] == ELFCLASS32)
 	printf("ELF32\n");
 	else if (e_ident[EI_CLASS] == ELFCLASS64)
 		printf("ELF64\n");
@@ -273,7 +273,7 @@ void closed(int zzz)
 	if (close(zzz) == -1)
 	{
 		dprintf(STDERR_FILENO,
-			"Error: Can't close fd %d\n", elf);
+			"Error: Can't close fd %d\n", zzz);
 		exit(98);
 	}
 }
@@ -351,7 +351,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	class_prints_out(cs->e_ident);
 	data_print(cs->e_ident);
 	print_version_ELF(cs->e_ident);
-	os_printd(cs->e_ident);
+	os_print(cs->e_ident);
 	abi_print_out(cs->e_ident);
 	type_print(cs->e_type, cs->e_ident);
 	entry_point_print(cs->e_entry, cs->e_ident);
