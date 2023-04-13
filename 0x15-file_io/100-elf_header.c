@@ -1,19 +1,5 @@
 #include "main.h"
 
-void os_print(unsigned char *buzz);
-void data_print(unsigned char *buzz);
-void print_magic_num(unsigned char *buzz);
-void entry_point_print(unsigned long int e_entry, unsigned char *buzz);
-void elf_check(unsigned char *buzz);
-void print_version_ELF(unsigned char *buzz);
-void type_print(unsigned int cuzz, unsigned char *buzz);
-void class_prints_out(unsigned char *buzz);
-void closed(int zzz);
-void abi_print_out(unsigned char *buzz);
-
-
-
-
 /*****************************START OF FUNCTIONS*****************************/
 
 /**
@@ -251,7 +237,7 @@ void class_prints_out(unsigned char *buzz)
 	if (buzz[EI_CLASS] == ELFCLASSNONE)
 		printf("none\n");
 	else if (buzz[EI_CLASS] == ELFCLASS32)
-	printf("ELF32\n");
+		printf("ELF32\n");
 	else if (buzz[EI_CLASS] == ELFCLASS64)
 		printf("ELF64\n");
 	else
